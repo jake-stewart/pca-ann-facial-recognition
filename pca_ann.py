@@ -1,10 +1,14 @@
 import numpy as np 
 import pandas as pd 
-import matplotlib.pyplot as plt
 from sklearn.metrics import classification_report
 from sklearn.utils import shuffle
+import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from sklearn.neural_network import MLPClassifier
+
+# fixes matplotlib not working on linux, haven't tested for windows
+import matplotlib
+matplotlib.use("TkAgg")
 
 import warnings
 warnings.filterwarnings("ignore")
