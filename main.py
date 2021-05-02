@@ -172,5 +172,5 @@ def pca_ann_cli(file_name, df):
 
 if __name__ == "__main__":
     file_name = "pca_ann.sav"
-    df = pd.read_csv("face_data\\face_data.csv")
+    df = pd.read_csv("face_data.csv")
     pca_ann_cli(file_name, df)
